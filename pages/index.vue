@@ -16,7 +16,7 @@
             />
           </button>
         </div>
-      </div>      
+      </div>
       <nuxt-child />
       <VehicleList
         :isLoaded="isLoaded"
@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     handler: function () {
-      alert("Oops, something went wrong!");
+      alert("Have a good day :)");
     },
   },
 };

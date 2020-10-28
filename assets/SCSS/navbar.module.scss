@@ -12,7 +12,7 @@ $darker-color: darken($main, 50%);
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 376px) {
+  @media (max-width: 415px) {
     width: 374px;
     margin: 0;
     padding: 0;
@@ -130,7 +130,7 @@ $darker-color: darken($main, 50%);
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 415px) {
   * {
     margin-left: 0;
     padding: 0;
@@ -142,7 +142,7 @@ $darker-color: darken($main, 50%);
   }
 
   .navbar {
-    margin: 40px 0;
+    margin: 40px 0 20px;
     display: flex;
     justify-content: space-evenly;
   }

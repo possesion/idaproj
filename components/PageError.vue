@@ -1,25 +1,30 @@
 <template>
-  <div class="card-error flex">
-    <div class="card-error-content">
-      <h1 class="card-error-title">An error has occurred</h1>
-      <p class="card-error-text">please refresh the page</p>
+  <div :class="$style.error">
+    <div :class="$style.content">
+      <h1 :class="$style.title">An error has occurred</h1>
+      <p :class="$style.text">please refresh the page</p>
       <button @click="handleClick()" class="card-error-btn">Reload page</button>
     </div>
   </div>
 </template>
 
 <script>
-import "../assets/SCSS/pageError.scss";
-
 export default {
   name: "Page-error",
   methods: {
     handleClick() {
       const { dispatch } = this.$store;
-      console.log(this.$store.state);
-      dispatch("reloadFetch");
+      for (let i = 0; i <= 3; i += 1) {
+        console.log("Попытка подключения" + i + 1);
+        if (this.$store.state.vehicles.length !== 0) {
+          return;
+        }
+        dispatch("reloadFetch");
+      }
     },
   },
 };
 </script>
 
+<style module src="../assets/SCSS/pageError.module.scss" lang="scss">
+</style>

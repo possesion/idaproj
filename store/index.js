@@ -20,7 +20,7 @@ const mutations = {
         return state.currentFilter = payload;
     },
     SET_CURRENT_VEHICLE: (state, id) => {
-        return state.currentVehicle = state.vehicles.filter(vehicle => vehicle.id === id)[0];
+        return state.currentVehicle = state.vehicles.find(vehicle => vehicle.id === id);
     },
     FILTER_VEHICLES: (state, filter = '') => {
         return state.vehicles.filter(vehicle => vehicle.type === filter);
@@ -46,9 +46,9 @@ const actions = {
 };
 
 const getters = {
-    getState: state => {
-        return state;
-    }
+    // vehicleById: state => id => {
+    //     return state.vehicles.find(vehicle => vehicle.id === id)
+    // }
 };
 
 export default {

@@ -36,7 +36,7 @@ export default {
   ],
 
   router: {
-    base: '/vehicles/'
+    base: '/idaproj/'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

@@ -5,13 +5,14 @@ $btn-text: #fcfcfc;
   display: flex;
 }
 
-.card-error {
-  height: 100vh;
+.error {
+  display: flex;
+  height: 65vh;
   margin-bottom: 48px;
   justify-content: center;
   align-items: center;
 
-  &-content {
+  .content {
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -38,4 +39,15 @@ $btn-text: #fcfcfc;
     outline: none;
     color: $btn-text;
   }
+}
+
+@media (max-width: 415px) {
+  .error {
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    margin: 0;
+  }
+
+  .content {}
 }

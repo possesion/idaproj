@@ -3,7 +3,7 @@ $second: #012345;
 $pink: #F84AB3;
 
 * {
-  font-family: Codec Pro;
+  font-family: Calibri;
 }
 
 .flex {
@@ -90,7 +90,7 @@ p {
 }
 
 span {
-  font-family: serif;
+  // font-family: serif;
   color: #F71D9F;
 }
 
@@ -244,7 +244,7 @@ ul {
 
 
 // _______________ MEDIA _______________ 
-@media (max-width: 376px) {
+@media (max-width: 415px) {
   .flex {
     display: block;
     justify-content: center;

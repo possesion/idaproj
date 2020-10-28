@@ -11,14 +11,14 @@
             exact
             active-class="active"
             :to="{
-              name: 'vehicles-id-specifications',
+              name: 'catalog-id-specifications',
               params: { id: currentVehicle.id },
             }"
             >Specification</nuxt-link
           >
           <nuxt-link
             :to="{
-              name: 'vehicles-id-team',
+              name: 'catalog-id-team',
               params: { id: currentVehicle.id },
             }"
             active-class="active"
@@ -28,7 +28,7 @@
           <nuxt-link
             active-class="active"
             :to="{
-              name: 'vehicles-id-term',
+              name: 'catalog-id-term',
               params: { id: currentVehicle.id },
             }"
             >Term</nuxt-link
