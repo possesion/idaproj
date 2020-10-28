@@ -1,0 +1,21 @@
+$main: #4959ff;
+
+.select {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  margin-left: 10px;
+  color: $main;
+  cursor: pointer;
+  transition: color .3s;
+
+
+  @media (max-width: 376px) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}

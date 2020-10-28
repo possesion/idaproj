@@ -11,7 +11,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  loading: {
+    color: '#4959ff',
+    height: '5px'
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
@@ -33,5 +36,13 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    loaders: {
+      cssModules: {
+        modules: {
+          //this is where you can alter the generated class names:
+          localIdentName: "[local]--_[hash:base64:4]",
+        }
+      }
+    },
   }
 }

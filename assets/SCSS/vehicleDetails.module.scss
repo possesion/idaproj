@@ -1,0 +1,317 @@
+$main: #677B8F;
+$second: #012345;
+$pink: #F84AB3;
+
+* {
+  font-family: Codec Pro;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 146%;
+  color: $main;
+}
+
+.container {
+  width: 1312px;
+  margin: 0 auto;
+
+  @media (max-width: 376px) {
+    width: 374px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+
+
+// ____________DESCRIPTION_MAIN____________
+
+
+.wrapper {
+  display: flex;
+}
+
+.vehicleImg {
+  width: 712px;
+  height: 700px;
+  border-radius: 24px;
+}
+
+.description {
+  align-self: center;
+  padding: 0 64px;
+
+  .tabs {
+    display: flex;
+    margin: 32px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    color: $main;
+
+    .team {
+      margin: 0 32px;
+    }
+  }
+}
+
+// .tabsContent {
+//   height: 532px;
+// }
+
+.rent {
+  width: 536px;
+  height: 80px;
+  display: flex;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background: #F3F4F7;
+  padding: 0 32px;
+
+
+}
+
+.rent .rentPrice {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+
+}
+
+span {
+  font-family: serif;
+  color: #F71D9F;
+}
+
+button {
+  flex-grow: 0;
+  width: 136px;
+  height: 48px;
+  background: #4959FF;
+  border-radius: 12px;
+  color: #FCFCFC;
+  outline: none;
+}
+
+// _______________ DESCRIPTION_MAIN _______________ //
+
+
+// _______________ TEAM _______________
+.team .teamContent {
+  margin: 32px 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: #677B8F;
+}
+
+.team {
+
+
+  h3 {
+    margin: 32px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 21px;
+  }
+
+  // .teamItem :nth-child(even) {
+  //   margin: 0 25px;
+
+  // }
+
+  .specialists {
+    display: flex;
+
+    :nth-child(even) {
+      margin: 0 25px;
+    }
+
+    .teamItem {
+      img {
+        border-radius: 16px;
+      }
+
+      h5 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        color: $second;
+        margin: 16px 0 8px;
+      }
+
+      .teamText {
+        margin: 0;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 148%;
+        font-style: normal;
+        color: $main;
+      }
+    }
+  }
+}
+
+.teamItem2 {
+  margin: 0 25px;
+}
+
+// _______________ TEAM _______________//
+
+
+// _______________ SPECIFICATIONS _______________
+
+.specifications {
+  .content {
+    h1 {
+      margin: 32px 0;
+    }
+
+    .table {
+      display: flex;
+      align-items: center;
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 96px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+        flex-shrink: 0;
+        background: #F3F4F7;
+      }
+
+      .icon {
+        display: block;
+        width: 30px;
+        text-align: center;
+        margin: 0 auto;
+
+        img {
+          margin: 0 auto;
+          align-items: center;
+        }
+      }
+
+      .text {
+        align-items: center;
+        margin-left: 24px;
+
+        h5 {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+// _______________ SPECIFICATIONS _______________//
+
+// _______________ TERMS _______________
+
+ul {
+  color: $pink;
+
+  :nth-child(2) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  span {
+    color: $main;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 146%;
+  }
+}
+
+// _______________ TERMS _______________ //
+
+
+// _______________ MEDIA _______________ 
+@media (max-width: 376px) {
+  .flex {
+    display: block;
+    justify-content: center;
+  }
+
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vehicleImg {
+    width: 90%;
+    height: auto;
+  }
+
+  .description {
+    padding: 0 16px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .rent {
+    width: 85%;
+    padding: 12px 24px;
+    height: auto;
+    border-radius: 16px;
+
+    .rentPrice {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    button {
+      width: 111px;
+      height: 44px;
+      font-size: 14px;
+    }
+  }
+
+  // ____________## Main ##____________ //
+  .team .specialists {
+    display: block;
+
+    :nth-child(2) {
+      margin: 16px 0;
+    }
+
+    .teamItem {
+      .column {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .teamItem {
+    display: flex;
+  }
+
+  // ____________## Team ##____________ 
+
+
+
+  // ____________## Term ##____________ 
+}
+
+// _______________ MEDIA _______________ //
