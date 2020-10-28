@@ -11,6 +11,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  target: 'static',
+  router: {
+    base: '/vehicle.github.io/'
+  },
   loading: {
     color: '#4959ff',
     height: '5px'
