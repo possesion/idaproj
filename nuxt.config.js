@@ -11,10 +11,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  target: 'static',
-  router: {
-    base: '/vehicle.github.io/'
-  },
+
   loading: {
     color: '#4959ff',
     height: '5px'
@@ -37,6 +34,10 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
   ],
+
+  router: {
+    base: '/vehicles/'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
