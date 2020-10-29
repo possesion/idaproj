@@ -276,7 +276,7 @@ ul {
   }
 
   .vehicleImg {
-    width: 90%;
+    max-width: 90%;
     height: auto;
   }
 
@@ -290,8 +290,8 @@ ul {
 
   .rent {
     width: 85%;
-    padding: 12px 24px;
     height: auto;
+    padding: 12px 24px;
     border-radius: 16px;
     position: sticky;
     bottom: 12px;
