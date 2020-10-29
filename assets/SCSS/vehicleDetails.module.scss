@@ -6,7 +6,7 @@ $phone: 480px;
 $tablet: 992px;
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 * {
@@ -33,7 +33,7 @@ p {
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     width: 90%;
     margin: 0 auto;
     padding: 0;
@@ -255,7 +255,7 @@ ul {
 
 
 // _______________ MEDIA _______________ 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .flex {
     display: block;
     justify-content: center;
@@ -263,7 +263,7 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   // .flex {
 
   //   justify-content: center;
