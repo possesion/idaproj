@@ -2,10 +2,6 @@
   display: flex;
 }
 
-// * {
-//   color: red
-// }
-
 .card {
   display: flex;
   width: 373px;
@@ -13,6 +9,20 @@
   background: #fcfcfc;
   border-radius: 32px;
   margin: 32px;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: auto;
+    margin: 12px 16px;
+    border-radius: 24px;
+  }
+
+  @media (min-width: 481px) and (max-width: 992px) {
+    width: 343px;
+    height: auto;
+    margin: 0 0 16px;
+    padding: 0;
+  }
 }
 
 .img {
@@ -51,13 +61,4 @@
   font-size: 14px;
   margin-top: 16px;
   color: #f84ab3;
-}
-
-
-
-@media (max-width: 415px) {
-  .card {
-    margin: 12px 16px;
-    border-radius: 24px;
-  }
 }

@@ -12,11 +12,16 @@ $darker-color: darken($main, 50%);
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 415px) {
+  @media (max-width: 480px) {
     width: 374px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  @media (min-width: 481px) and (max-width: 992px) {
+    width: 85%;
+
   }
 }
 
@@ -130,7 +135,7 @@ $darker-color: darken($main, 50%);
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   * {
     margin-left: 0;
     padding: 0;
@@ -158,17 +163,13 @@ $darker-color: darken($main, 50%);
 
   }
 
-  .navbarText {
-    display: none;
-  }
+
 
   .nightmode {
     margin: 0;
   }
 
-  .toggler {
-    display: none;
-  }
+
 
   .notification {
     margin-right: 0;
@@ -180,11 +181,28 @@ $darker-color: darken($main, 50%);
     margin-right: 17px;
   }
 
-  .name {
-    display: none;
-  }
+
 
   .photo {
     width: 75%;
   }
+}
+
+@media (max-width: 992px) {
+  .name {
+    display: none;
+  }
+
+  .navbarText {
+    display: none;
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .nightmode {
+    margin-right: 0;
+  }
+
 }

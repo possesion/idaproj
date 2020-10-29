@@ -2,16 +2,23 @@ $main: #4959ff;
 $second: #677b8f;
 $auxiliery: #012345;
 $darker-color: darken($main, 50%);
+$phone: 480px;
+$tablet: 992px;
 
 .container {
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 415px) {
+  @media (max-width: 480px) {
     width: 374px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  @media (min-width: 481px) and (max-width: 992px) {
+    width: 90%;
+
   }
 }
 
@@ -88,7 +95,7 @@ $darker-color: darken($main, 50%);
 
 
 
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   .main {
     border-radius: 24px;
     margin-bottom: 24px;
@@ -122,4 +129,12 @@ $darker-color: darken($main, 50%);
       }
     }
   }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+
+  .main {
+    width: 100%;
+  }
+
 }

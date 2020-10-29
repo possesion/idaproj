@@ -2,8 +2,19 @@ $main: #677B8F;
 $second: #012345;
 $pink: #F84AB3;
 
+$phone: 480px;
+$tablet: 992px;
+
+a {
+  text-decoration:none;
+}
+
 * {
   font-family: Calibri;
+}
+
+.nuxt-link-exact-active {
+  color: green
 }
 
 .flex {
@@ -22,9 +33,9 @@ p {
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 376px) {
-    width: 374px;
-    margin: 0;
+  @media (max-width: 992px) {
+    width: 90%;
+    margin: 0 auto;
     padding: 0;
     justify-content: center;
     box-sizing: border-box;
@@ -244,11 +255,20 @@ ul {
 
 
 // _______________ MEDIA _______________ 
-@media (max-width: 415px) {
+@media (max-width: 992px) {
   .flex {
     display: block;
     justify-content: center;
+    position: relative;
   }
+}
+
+@media (max-width: 480px) {
+  // .flex {
+
+  //   justify-content: center;
+  //   position: relative;
+  // }
 
   .flexCenter {
     display: flex;
@@ -273,12 +293,15 @@ ul {
     padding: 12px 24px;
     height: auto;
     border-radius: 16px;
+    position: sticky;
+    bottom: 12px;
 
     .rentPrice {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 140%;
+
     }
 
     button {

@@ -21,7 +21,7 @@
               alt="nightmode"
             />
           </div>
-          <p :class="$style.toggler">Night mod</p>
+          <p :class="$style.toggler">Night mode</p>
         </a>
 
         <div :class="$style.notification">

@@ -7,7 +7,7 @@ $darker-color: darken($main, 50%);
   width: 1312px;
   margin: 0 auto;
 
-  @media (max-width: 415px) {
+  @media (max-width: 480px) {
     width: 374px;
     margin: 0;
     padding: 0;

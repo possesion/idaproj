@@ -1,5 +1,9 @@
 h3 {
   margin-top: 40px;
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
 }
 
 ul {
@@ -17,8 +21,17 @@ a {
   text-decoration: none;
 }
 
+.nuxt-link-exact-active {
+  color: green
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: 481px) and (max-width: 992px) {
+    justify-content: space-evenly;
+
+  }
 }
